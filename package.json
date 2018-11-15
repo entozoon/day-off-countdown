@@ -20,5 +20,8 @@
   "dependencies": {
     "googleapis": "^27.0.0",
     "readline-promise": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
   }
 }

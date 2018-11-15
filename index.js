@@ -1,3 +1,5 @@
+console.log("\x1Bc");
+
 const fs = require("fs");
 const { authInit } = require("./auth");
 const { google } = require("googleapis");
@@ -33,5 +35,5 @@ const listEvents = auth => {
 // .catch(e => console.log);
 
 authInit()
-  .then(console.log)
-  .catch(e => console.log);
+  .then(listEvents)
+  .catch(e => console.log(e));
