@@ -1,14 +1,6 @@
-import { authorize } from "./auth";
-// const fs = require("fs");
-import fs from 'fs';
-// const { google } = require("googleapis");
-
-// Load client secrets from a local file.
-fs.readFile("./credentials.json", (err, content) => {
-  if (err) return console.log("Error loading client secret file:", err);
-  // Authorize a client with credentials, then call the Google Calendar API.
-  authorize(JSON.parse(content), listEvents);
-});
+const fs = require("fs");
+const { authInit } = require("./auth");
+const { google } = require("googleapis");
 
 const listEvents = auth => {
   const calendar = google.calendar({ version: "v3", auth });
@@ -35,3 +27,11 @@ const listEvents = auth => {
     }
   );
 };
+
+// authInit();
+// .then(listEvents)
+// .catch(e => console.log);
+
+authInit()
+  .then(console.log)
+  .catch(e => console.log);
