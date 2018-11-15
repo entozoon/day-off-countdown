@@ -1,0 +1,23 @@
+{
+  "name": "day-off-countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules .",
+    "dev": "nodemon --experimental-modules ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entozoon/day-off-countdown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entozoon/day-off-countdown/issues"
+  },
+  "homepage": "https://github.com/entozoon/day-off-countdown#readme",
+  "dependencies": {
+    "googleapis": "^27.0.0"
+  }
+}
