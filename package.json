@@ -19,7 +19,7 @@
   "homepage": "https://github.com/entozoon/day-off-countdown#readme",
   "dependencies": {
     "googleapis": "^40.0.0",
-    "readline-promise": "^1.0.3"
+    "readline-promise": "^1.0.4"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
